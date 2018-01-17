@@ -1,7 +1,14 @@
 #Translation
 
+translations = [("avocado", "鳄梨") , ("bell pepper", "灯笼椒"), ("bitter melon" , "苦瓜")]
+
 a = input("Translation: ")
-""
+for i in translations:
+    if i [0] == a:
+        print(i[1])
+
+
+"""
 if a ==("avocado"):
     print("鳄梨")
 if a==("鳄梨"):
@@ -124,4 +131,4 @@ if a ==("桃子"):
 
 if a ==("miki"):
     print("I love you")
-    
+    """
