@@ -1,3 +1,3 @@
 # Game-project
-I wrote a project as a translation software. This project used to translate the words about fruits from English to Chinese and Chinese to English. Additionally, it is useful when you intend to buy fruits in China.  
-Testing: Type the words you want, then click ‘Enter’. 
+I was thinking and attempting to create a translation project. In my point of view, if a person who is not able to speak Chinese lives in a Chinese environment, how helpless and embarrassed he is.  I was considering what kind of translation project should I choice because if I tried to translate all the Chinese to English and all the English to Chinese, there are too many words and work. Thus I decided to work on the translation of fruit. In this translation app, you can translate the name of fruit from both English to Chinese and chinese to English. It is very helpful for the people who only know the name of the fruit in his native language.
+
