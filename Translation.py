@@ -2,11 +2,28 @@
 
 translations = [("avocado", "鳄梨") , ("bell pepper", "灯笼椒"), ("bitter melon" , "苦瓜")]
 
-a = input("Translation: ")
-for i in translations:
-    if i [0] == a:
-        print(i[1])
 
+def translate():
+    a = input("Translation: ")
+    matched = False
+    for i in translations:
+        if i [0] == a:
+            print(i[1])
+            matched = True
+        elif i[1] == a:
+            print(i[0])
+            matched = True
+    if matched == False:       
+        newwordChinese = input("There is no definition for this word? What is the Chinese word? ")
+        newwordEnglish = input("What is the word in English? ")
+        newwordpair = (newwordEnglish, newwordChinese)
+        print(newwordpair)
+        translations.append(newwordpair)
+    translate()
+    
+                           
+    
+translate()
 
 """
 if a ==("avocado"):
