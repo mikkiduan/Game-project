@@ -1,0 +1,1 @@
+[('avocado', 'e li'), ('bell pepper', 'deng long jiao'), ('bitter melon', 'ku gua'), ('a', 'b')]

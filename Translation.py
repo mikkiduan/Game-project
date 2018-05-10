@@ -1,8 +1,12 @@
 #Translation
-
-translations = [("avocado", "鳄梨") , ("bell pepper", "灯笼椒"), ("bitter melon" , "苦瓜")]
-
-
+import ast
+#translations = [("avocado", "e li") , ("bell pepper", "deng long jiao"), ("bitter melon" , "ku gua")]
+myfile = open("translation.txt" , "r")
+#myfile.write(str(translations))
+mystr = myfile.readline()
+print(mystr)
+translations = ast.literal_eval(mystr)
+myfile.close()
 def translate():
     a = input("Translation: ")
     matched = False
@@ -15,10 +19,14 @@ def translate():
             matched = True
     if matched == False:       
         newwordChinese = input("There is no definition for this word? What is the Chinese word? ")
-        newwordEnglish = input("What is the word in English? ")
+        newwordEnglish = a
         newwordpair = (newwordEnglish, newwordChinese)
         print(newwordpair)
         translations.append(newwordpair)
+        mysavefile = open("translation.txt","w")
+        mystring = str(translations)
+        mysavefile.write(mystring)
+        mysavefile.close()
     translate()
     
                            
